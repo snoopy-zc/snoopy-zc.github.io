@@ -2,6 +2,7 @@
 title: 4 things 
 date: 2026-07-06T00:00:00+08:00
 author: snoopy-zc
+draft: true
 categories:
 - 生活
 ---
