@@ -1,0 +1,111 @@
+baseURL = "https://snoopy-zc.github.io"
+defaultContentLanguage = "zh"
+locale = "zh-Hans"
+title = "ChenZ's Blog"
+theme = "dream"
+
+enableGitInfo = true
+enableRobotsTXT = true
+
+hasCJKLanguage = true
+
+[services]
+[services.disqus]
+shortname = "chen"
+
+[markup]
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+[markup.goldmark.parser.attribute]
+block = true
+[markup.goldmark.renderer]
+unsafe = true
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)'], ['$', '$']]
+[markup.highlight]
+noClasses = false
+
+# [taxonomies]
+# category = "categories"
+# tag = "tags"
+# series = "series"
+
+[params]
+# zenMode = true
+
+lightTheme = "emerald"
+darkTheme = "forest"
+
+# backgroundImage = "img/global-background.jpg"
+# backgroundImageDark = ""
+
+images = ["img/global-background.jpg"]
+
+author = "ChenZ"
+description = "The life record of ChenZ is presented here."
+avatar = "img/personal/avatar.jpg"
+headerTitle = "ChenZ's Blog"
+motto = "弦歌不辍。"
+
+# footerBottomText = ""
+
+rss = false
+
+utterancesRepo = "snoopy-zc.github.io"
+
+# valine = true
+# LEANCLOUD_APP_ID = ""
+# LEANCLOUD_APP_KEY = ""
+
+# waline = true
+# walineServer = ""
+
+email = "snoopy-zc@qq.com"
+
+siteStartYear = 2026
+
+favicon = '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🌱</text></svg>"></link>'
+
+# Syntax highlighting
+customSyntaxHighlighting = true
+
+# options
+stickyNav = true
+reorderNavItems = [
+  "about",
+  "search",
+  "github",
+  "products",
+  "posts",
+  "categories",
+  "tags",
+  "rss",
+]
+collapseNavItems = ["posts", "categories", "tags", "rss"]
+# noDefaultSummaryCover = true
+showTableOfContents = true
+showSummaryCoverInPost = true
+imageZoomableInPost = true
+showPrevNextPost = true
+# reorderShares = ["x","whatsapp", "facebook"]
+reorderShares = [""]
+
+# https://gohugo.io/templates/embedded/#configure-x-twitter-cards
+[params.social]
+#twitter = ""
+
+[params.navItems]
+github = { href = "https://github.com/snoopy-zc", target = "_blank", icon = "logo-github", title = "GitHub" }
+products = { href = "https://snoopy-zc.github.io", target = "_blank", icon = "planet", title = "ChenZ's Blog" }
+
+[params.advanced]
+customCSS = ["css/custom.css"]
+# customJS = []
+
+[params.experimental]
+jsDate = true
+jsDateFormat = "yyyy年MM月dd日"
+# jsDateFormat = "yyyy年MM月dd日，cccc"
