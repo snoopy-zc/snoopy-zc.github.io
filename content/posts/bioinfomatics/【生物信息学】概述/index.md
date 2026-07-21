@@ -23,12 +23,15 @@ categories:
 
  ✅ 北京大学：生物信息学 (https://www.bilibili.com/video/BV13t411G7oh)
 
+ ✅ 教育部生物科学101计划重点平台：生物信息学 (https://bis.zju.edu.cn/bioinfo101/) <font color="red">（推荐）</font>
 
 
 
 ## 2 参考书籍
 
-1. 《生物信息学》(第4版) 科学出版社
+1. 陈铭《生物信息学》(第4版)科学出版社
+
+2. 赵旻《医学生物信息学数据分析与应用》科学出版社 <font color="red">（推荐）</font>
 
 2. Selzer, P. M., Marhöfer, R. J. & Koch, O. Applied Bioinformatics. (Springer International Publishing, Cham, 2018). doi:10.1007/978-3-319-68301-0.
 
