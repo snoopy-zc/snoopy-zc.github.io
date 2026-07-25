@@ -59,8 +59,7 @@ The purpose of a sequence alignment is to line up all residues in the inputted s
 
 ### 示例：序列比对实例与打分系统
 
-
-![](eg1.png)
+![Alt text](eg1.jpg)
 
 - 左侧：序列比对结果（HBA vs HBB 人类血红蛋白）
 - 右上：BLOSUM62 替换矩阵
@@ -78,15 +77,91 @@ The purpose of a sequence alignment is to line up all residues in the inputted s
 
 ## 2 动态规划方法进行全局比对
 
+### Pairwise Sequence Alignment: in Maths
+
+- **Input data:**
+  - Two sequences S1 and S2
+
+- **Parameter(s)**
+  - A scoring function **f** for
+    - Substitutions
+    - Gaps
+
+- **Output:**
+  - The **optimal alignment** of S1 and S2, which has the **maximal score**.
+
+Goal in math：
+$$\arg\max_{ali}(f(ali(S1, S2)))$$
+
+
+### Sequence Alignment: Enumerate? （能否穷举）
+
+**示例（LSPADK vs LTPEEK）：**
+
+```
+| LSPADK | L-SPADK | L-SPADK |
+| LTPEEK | LTPEEK- | LT-PEEK |
+
+| ------LSPADK | L-S-P-A-D-K- |
+| LTPEEK------ | -L-T-P-E-E-K |
+```
+**序列长度为n时，可能的比对次数：**
+
+$$\binom{2n}{n} = \frac{(2n)!}{(n!)((2n-n)!)}$$
+
+--- 
+
+**残基比对的两种可能**
+
+- A residue can either
+    - Align to other residue, or
+    - Align to a gap
+
+**三种比对方式示意图：**
+```
+  S  |  S  |  -
+  T  |  -  |  T
+```
+（匹配/错配、序列1插入空位、序列2插入空位）
+
+
+**动态规划的核心思想**
+
+New Best Alignment = Previous Best + Local Best
+
+![Alt text](eg2.jpg)
+
+两条序列的残基逐步比对，通过方块和连线表示比对路径
+
+### 动态规划公式 Sequence alignment with Dynamic Programming
+
+- Align two sequences: **x** and **y**
+  - F(i,j) is the score of the best alignment between $x_{1...i}$ and $y_{1...j}$
+  - s(A,B) is the score for substituting A with B; **d** is the (linear) gap penalty
+
+**递推公式：**
+
+$$F(0,0) = 0$$
+
+$$F(i,j) = \max \begin{cases} F(i-1, j-1) + s(x_i, y_j) & \text{x}_i \text{ aligned to } \text{y}_j \\ F(i-1, j) + d & \text{x}_i \text{ aligned to a gap} \\ F(i, j-1) + d & \text{y}_j \text{ aligned to a gap} \end{cases}$$
+
+---
+
+### 示例：使用动态规划进行全局比对
+
+![Alt text](eg3-dp.jpg)
+
+![Alt text](eg4-dp-taceback.jpg)
+
 
 
 ## 3 全局比对 VS 局部比对
 
 - 全局比对（Global Alignment）
-    - 算法：Needleman–Wunsch algorithm
+    - 算法：Needleman–Wunsch algorithm (1970)
 
 - 局部比对（Local alignment）
-    - 算法：Smith-Waterman algorithm
+    - 算法：Smith-Waterman algorithm (1981)
 
 ### 全局比对与局部比对的递推公式对比
 
@@ -108,49 +183,9 @@ $$F(i,j) = \max \begin{cases} F(i-1, j-1) + s(x_i, y_j) \\ F(i-1, j) + d \\ F(i,
 
 ---
 
-### 局部比对的动态规划示例(DP for Local alignment: Example)
+### 示例：局部比对的动态规划
 
-**题目：**
-> Find the optimal **local alignment** of AAG and AGC.
-> Use a linear gap penalty of **d = -5**.
-
-**赋分矩阵：**
-
-|     | A   | C   | G   | T   |
-|-----|-----|-----|-----|-----|
-| **A** | 2   | -7  | -5  | -7  |
-| **C** | -7  | 2   | -7  | -5  |
-| **G** | -5  | -7  | 2   | -7  |
-| **T** | -7  | -5  | -7  | 2   |
-
----
-
-**动态规划递推关系示意图：**
-
-```
-        0
-       / \
-F(i-1,j-1)  F(i,j-1)
-   ↘ s(xᵢ,yⱼ)  ↓ d
-      → F(i,j) ←
-     /
-F(i-1,j) → d
-```
-
----
-
-**动态规划得分矩阵（DP Matrix）：**
-
-|       |     | **A** | **A** | **G** |
-|-------|-----|-------|-------|-------|
-|       | **0** | **0** | **0** | **0** |
-| **A** | 0   | 2     | 2     | 0     |
-| **G** | 0   | 0     | 0     | **4** |
-| **C** | 0   | 0     | 0     | 0     |
-
-> （最优路径用红色虚线标出，最大得分 **4** 位于矩阵右下角区域）
-
----
+![Alt text](eg5-dp-local.jpg)
 
 #### 全局比对 vs 局部比对（Global vs. Local）
 
@@ -192,4 +227,56 @@ $$F(i,j) = \max \begin{cases} F(i-1, j-1) + s(x_i, y_j) \\ F(i-1, j) + d \\ F(i,
 
 
 
-## 
+## 4 考虑仿射空位罚分的序列比对
+
+前面例子均未考虑gap opening和gap extending罚分不同的情形，本节借助**状态机模型**来讨论此情况。
+
+### 状态定义表
+
+| 状态 | 含义 |
+|------|------|
+| **M** | **Match** (*not necessarily identical*) — 匹配（不一定是相同残基） |
+| **X** | *Insert at sequence X* (delete at sequence Y) — 在序列X中插入（即在序列Y中删除） |
+| **Y** | *Insert at sequence Y* (delete at sequence Y) — 在序列Y中插入（即在序列X中删除） |
+
+### 参数定义
+
+| 参数 | 含义 |
+|------|------|
+| **d** | Gap open — 空位开启罚分 |
+| **e** | Gap Extension — 空位延伸罚分 |
+
+### 状态转移图
+
+![Alt text](eg6-state-machine.jpg)
+
+**转移说明：**
+- **M → M**: 自环，得分 `s(xᵢ, yⱼ)`（继续匹配/错配）
+- **M → X**: 得分 `-d`（开启空位，序列X插入）
+- **M → Y**: 得分 `-d`（开启空位，序列Y插入）
+- **X → X**: 自环，得分 `-e`（空位延伸）
+- **X → M**: 得分 `s(xᵢ, yⱼ)`（从空位状态回到匹配）
+- **Y → Y**: 自环，得分 `-e`（空位延伸）
+- **Y → M**: 得分 `s(xᵢ, yⱼ)`（从空位状态回到匹配）
+
+
+### 考虑仿射空位罚分的动态规划公式
+
+![Alt text](eg7-dp-gap1.jpg) 
+
+![Alt text](eg8-dp-gap2.jpg)
+
+## 5 拓展
+
+![Alt text](eg9-method.jpg) 
+
+![Alt text](eg10-similarity-matrix.jpg) 
+
+![Alt text](eg11-dot-matrix.jpg) 
+
+![Alt text](eg12-dot-matrix2.jpg)
+
+
+
+
+
