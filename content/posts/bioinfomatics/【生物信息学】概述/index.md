@@ -23,7 +23,7 @@ categories:
 
  ✅ 北京大学：生物信息学 (https://www.bilibili.com/video/BV13t411G7oh)
 
- ✅ 教育部生物科学101计划重点平台：生物信息学 (https://bis.zju.edu.cn/bioinfo101/) <font color="red">（推荐）</font>
+ ✅ 教育部生物科学101计划重点平台：生物信息学 (https://bis.zju.edu.cn/bioinfo101/) <font color="red">（课件可直接下载）</font>
 
 
 
