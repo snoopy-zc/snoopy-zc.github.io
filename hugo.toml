@@ -25,6 +25,7 @@ enable = true
 [markup.goldmark.extensions.passthrough.delimiters]
 block = [['\[', '\]'], ['$$', '$$']]
 inline = [['\(', '\)'], ['$', '$']]
+# inline = [['\(', '\)']]
 [markup.highlight]
 noClasses = false
 
@@ -35,6 +36,7 @@ noClasses = false
 
 [params]
 # zenMode = true
+math = true
 
 lightTheme = "emerald"
 darkTheme = "forest"

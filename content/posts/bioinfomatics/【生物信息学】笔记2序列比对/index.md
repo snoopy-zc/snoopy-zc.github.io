@@ -2,7 +2,7 @@
 title: 【生物信息学】笔记2序列比对
 date: 2026-07-21T00:00:00+08:00
 author: Chen Z
-cover: cover.jpg
+cover: eg2.jpg
 images:
 - cover.jpg
 categories:
@@ -17,7 +17,8 @@ categories:
 <!--more-->
 
 
-## 1 序列比对（Sequence Alignment）基础
+## 1 序列比对基础
+（Sequence Alignment）
 
 ### 研究对象
 
@@ -50,7 +51,8 @@ categories:
     - "**Homology**"，即"**同源性**"
 
 
-### 生物学中的序列比对（Sequence Alignment in Biology）
+### 生物学中的序列比对
+（Sequence Alignment in Biology）
 
 The purpose of a sequence alignment is to line up all residues in the inputted sequence(s) for **maximal level of similarity**, in the sense of **their functional or evolutionary relationship**.
 （序列比对的目的是将输入序列中的所有残基排列起来，以达到**最大程度的相似性**，这种相似性是基于**它们的功能或进化关系**的。）
@@ -133,7 +135,8 @@ New Best Alignment = Previous Best + Local Best
 
 两条序列的残基逐步比对，通过方块和连线表示比对路径
 
-### 动态规划公式 Sequence alignment with Dynamic Programming
+### 动态规划公式 
+Sequence alignment with Dynamic Programming
 
 - Align two sequences: **x** and **y**
   - F(i,j) is the score of the best alignment between $x_{1...i}$ and $y_{1...j}$
@@ -198,14 +201,11 @@ $$F(0,0) = 0$$
 $$F(i,j) = \max \begin{cases} F(i-1, j-1) + s(x_i, y_j) \\ F(i-1, j) + d \\ F(i, j-1) + d \end{cases}$$
 
 **全局比对结果示例：**
+```
+ AAG-    AAG-
+ -AGC    A-GC
 
-| A | A | G | - |
-|---|---|---|---|
-| - | A | G | C |
-
-| A | A | G | - |
-|---|---|---|---|
-| A | - | G | C |
+```
 
 ---
 
@@ -216,15 +216,10 @@ $$F(0,0) = 0$$
 $$F(i,j) = \max \begin{cases} F(i-1, j-1) + s(x_i, y_j) \\ F(i-1, j) + d \\ F(i, j-1) + d \\ 0 \end{cases}$$
 
 **局部比对结果示例：**
-
-| A | G |
-|---|---|
-| A | G |
-
-| A |
-|---|
-| A |
-
+```
+ AG     A
+ AG     A
+```
 
 
 ## 4 考虑仿射空位罚分的序列比对
