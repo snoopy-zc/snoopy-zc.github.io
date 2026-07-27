@@ -72,13 +72,94 @@ Token Path（标记路径）:   Y₁     Y₂    ...     Yₙ₋₁     Yₙ
 
 ---
 
-> ZC:  核心思想
+> 核心思想
 > - 状态与观测相分离
 > - 状态与状态之间存在转移概率，转移概率分布
 > - 每个状态都可以产生一组可以观测的符号，生成概率分布
 > - 建模的目标是，通过一组符号反推状态路径
 
+
+---
+
+### 基于HMM的序列比对
+
+**标题：** Sequence alignment with HMM
+
+- Each "token" of the HMM is an aligned pair of two residues (**M state**), or of a residue and a gap (**X or Y state**).
+  （HMM的每个"标记"是两个残基的对齐对（**M状态**），或一个残基与一个空位（**X或Y状态**）。）
+  
+  - Transition and emission probabilities define the probability of each aligned pair of sequences.
+    （转移概率和发射概率定义了每对序列比对的对齐概率。）
+
+- Based on the HMM, each alignment of two sequences can be assigned with a probability
+  （基于HMM，两条序列的每种比对都可以被赋予一个概率）
+  
+  - Given two input sequences, we look for an alignment with the **maximum probability**.
+    （给定两条输入序列，我们寻找具有**最大概率**的比对。）
+
+$$\arg\max_{ali}(P(S1, S2, ali))$$
+
+---
+
+### 核心概念对应
+
+| HMM状态 | 含义 | 对应动态规划 |
+|---------|------|-------------|
+| **M state** | 两个残基对齐（Match/匹配） | F(i-1, j-1) + s(xᵢ, yⱼ) |
+| **X state** | 序列X残基对空位（Insert at X / Delete at Y） | F(i-1, j) + d |
+| **Y state** | 序列Y残基对空位（Insert at Y / Delete at X） | F(i, j-1) + d |
+
+---
+
+### 与动态规划的对比
+
+| 方法 | 目标 |
+|------|------|
+| **动态规划** | 寻找**最大得分**（score-based） |
+| **HMM** | 寻找**最大概率**（probability-based） |
+
+HMM将序列比对问题转化为概率模型，通过转移概率（对应空位罚分）和发射概率（对应替换得分）来定义比对的最优性。
+
+![Alt text](eg-sq-ali-HMM.jpg)
+
+> 概率的引入可以让我们使用概率论的知识做更多分析。如，在不引入比对的情况下，来计算两条序列的最大可能相似性。
+
+> 同一个观察序列可以来自许多不同的状态路径。
+>
+> 因此，将所有状态路径概率求和，就得到了该观察序列的全概率
+
+$$
+P(X,Y) = \sum_{ali} P(X,Y,ali)
+$$
+
 ## 3 利用隐马尔科夫模型建立预测模型
 
+**The Most Simple Gene Predictor (MSGP)**
 
+Given a stretch of genomic sequence, where are the coding regions and where are noncoding regions?
+
+`ACCCTAACCCTAACCCTCGCGGTACCCTCAGCCCGAAAAAAATCG`
+
+---
+
+**Training the model**
+
+- What we need to train?
+  - Transition Probabilities **between states**
+  - Emission Probabilities **for each state**
+
+- Estimate Probabilities from known "**Training set**"
+  - An annotated genomic region, with coding/noncoding sequences labeled.
+
+```
+Token: ACGCTTCTGGTCCCCACAGACTCAGAGAGAACCCACCATGGTGATGT......
+State: CCCCCCCCCNNNNNCCCCCCCCCNNNNNNNNNCCCCCCCCCCCCNNN......
+```
+  
+$$\hat{a}_{kl} = \frac{a_{kl}}{\sum_{l'} a_{kl'}}$$
+
+$$\hat{e}_k(b) = \frac{e_k(b)}{\sum_{b'} e_k(b')}$$
+
+
+> 通常情况下，概率的连续相乘，不仅慢，且因计算机机制，数值过小会出现下溢的风险，所以通常引入对数计算，将乘法转化为加法，提前将概率矩阵取对数。
 

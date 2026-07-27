@@ -19,7 +19,7 @@ categories:
 
  ✅ 北京大学：生物信息学 (https://www.bilibili.com/video/BV13t411G7oh)
 
- ✅ 教育部生物科学101计划重点平台：生物信息学 (https://bis.zju.edu.cn/bioinfo101/) <font color="red">（课件可直接下载）</font>
+ ✅ 教育部生物科学101计划重点平台：生物信息学 (https://bis.zju.edu.cn/bioinfo101/ppt_resources) <font color="red">（课件可直接下载）</font>
 
  ✅ 多伦多大学：生物信息学方法 (https://www.bilibili.com/video/BV1uMNE6EEcS)
 - 搬运 https://www.coursera.org/learn/bioinformatics-methods-1
