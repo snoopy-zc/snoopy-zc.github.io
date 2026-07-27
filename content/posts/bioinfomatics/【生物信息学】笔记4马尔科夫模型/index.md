@@ -162,4 +162,22 @@ $$\hat{e}_k(b) = \frac{e_k(b)}{\sum_{b'} e_k(b')}$$
 
 
 > 通常情况下，概率的连续相乘，不仅慢，且因计算机机制，数值过小会出现下溢的风险，所以通常引入对数计算，将乘法转化为加法，提前将概率矩阵取对数。
+---
+**How to build a model**
+如何构建一个模型
 
+- **Three fundamental problems: given model M=M(w)**
+  
+  三个基本问题：给定模型 M=M(w)
+
+- **Evaluation:** one sequence 'O = O1O2...' : calculate P(O|w)
+  
+  评估：给定一条序列 'O = O1O2...'：计算 P(O|w)
+
+- **Decoding:** multiple sequences 'Oa/Ob...': choose S = q1q2... which could best interpret observed sequences O
+  
+  解码：多条序列 'Oa/Ob...'：选择 S = q1q2... 以最好地解释观测序列 O
+
+- **Learning:** Adjust parameters to maximize P(O|w), use observed sequences to train the model
+  
+  学习：调整参数以最大化 P(O|w)，利用观测序列来训练模型
