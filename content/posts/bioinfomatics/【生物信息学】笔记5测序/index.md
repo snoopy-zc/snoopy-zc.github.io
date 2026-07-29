@@ -47,7 +47,7 @@ Next Generation Sequencing / Deep Sequencing（新一代测序/深度测序）
 
 > Reads Mapping本质上是双序列比对问题
 > 
-> 基因组很长，reads很短
+> 但是，基因组很长，reads很短
 
 
 > 在实际过程中，更多使用mapping quality而非序列比对分数来筛选真正的reads mapping的位置。
@@ -56,7 +56,7 @@ Next Generation Sequencing / Deep Sequencing（新一代测序/深度测序）
 - 计数，一种朴素的方法
 
 
-## 
+
 
 
 
