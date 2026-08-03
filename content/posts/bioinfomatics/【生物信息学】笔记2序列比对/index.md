@@ -75,7 +75,10 @@ The purpose of a sequence alignment is to line up all residues in the inputted s
     **Final Score = (sum of substitution scores) + (-1) * (sum of Gap Penalty)**
     
     最终得分 = 替换得分总和 + (-1) × 空位罚分总和）
-
+```
+线性罚分：是固定的罚分,即多个空位的罚分是多倍的
+仿射罚分：由较大的空位引入罚分和较小的空位延申罚分
+```
 
 ## 2 动态规划方法进行全局比对
 
