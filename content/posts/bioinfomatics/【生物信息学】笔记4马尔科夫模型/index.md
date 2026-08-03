@@ -181,3 +181,10 @@ $$\hat{e}_k(b) = \frac{e_k(b)}{\sum_{b'} e_k(b')}$$
 - **Learning:** Adjust parameters to maximize P(O|w), use observed sequences to train the model
   
   学习：调整参数以最大化 P(O|w)，利用观测序列来训练模型
+
+## 参考文献
+
+1. [【视频】生物信息学  4-1 从状态到马尔可夫链](https://www.bilibili.com/video/BV13t411G7oh/?p=12)
+2. [【视频】生物信息学  4-2 隐马尔可夫模型](https://www.bilibili.com/video/BV13t411G7oh/?p=13)
+3. [【视频】生物信息学  4-3 用隐马尔可夫模型建立预测模型](https://www.bilibili.com/video/BV13t411G7oh/?p=14)
+

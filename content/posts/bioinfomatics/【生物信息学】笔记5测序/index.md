@@ -83,7 +83,7 @@ Next Generation Sequencing / Deep Sequencing（新一代测序/深度测序）
 - 似然函数
     - 统计模型参数的函数
 - 贝叶斯方法
-    - 
+    
 
 统计模型在实际使用过程中并没有对错之分，只有依据对数据的拟合和刻画能力，以及看实际的结果和正确率
 由于实际数据中有时存在不符合经典模型假设的情况，所以真实使用的模型常常会显得较为复杂，还可能涉及一些算法设计实现上的细节
@@ -108,4 +108,9 @@ Next Generation Sequencing / Deep Sequencing（新一代测序/深度测序）
 SNP 是 Single Nucleotide Polymorphism 的缩写，中文译为 单核苷酸多态性。指在基因组水平上，由单个核苷酸（A、T、C、G）的变异所引起的 DNA 序列多态性。简单来说，就是不同个体（或同一物种不同样本）在同一基因组位置上，某个碱基发生了替换（如 A→G）、缺失或插入。
 
 
+## 参考文献
+
+1. [【视频】生物信息学  5-1 新一代测序](https://www.bilibili.com/video/BV13t411G7oh/?p=18)
+2. [【视频】生物信息学  5-2 序列回帖和变异鉴定](https://www.bilibili.com/video/BV13t411G7oh/?p=19)
+3. [【视频】生物信息学  5-3 序列回帖和变异鉴定的分析演示](https://www.bilibili.com/video/BV13t411G7oh/?p=20)
 

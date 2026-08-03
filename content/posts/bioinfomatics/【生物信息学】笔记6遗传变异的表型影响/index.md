@@ -87,3 +87,10 @@ categories:
 
 
 
+
+## 参考文献
+
+1. [【视频】生物信息学  6-1问题概述](https://www.bilibili.com/video/BV13t411G7oh/?p=26)
+2. [【视频】生物信息学  6-2记录变异的数据库](https://www.bilibili.com/video/BV13t411G7oh/?p=27)
+3. [【视频】生物信息学  6-3 基于保守性和规则的预测方法：SIFT和PolyPhen](https://www.bilibili.com/video/BV13t411G7oh/?p=28)
+4. [【视频】生物信息学  6-4 基于机器学习分类器的预测方法：SAPRED](https://www.bilibili.com/video/BV13t411G7oh/?p=29)

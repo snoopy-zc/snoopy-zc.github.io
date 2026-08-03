@@ -10,7 +10,7 @@ categories:
 - 学习笔记
 ---
 
-生物信息学是一个前言交叉领域，发展并应用计算机和计算机技术去研究生物学问题。（详情页持续更新...）
+生物信息学是一个前言交叉领域，发展并应用计算机和计算机技术去研究生物学问题。（本章持续更新...）
  
 
 <!--more-->
@@ -43,7 +43,7 @@ categories:
 https://mp.weixin.qq.com/s/uxO5GBQfmFizNpTlkJ63fA
 
 
-## 4 生信Agent（进阶）
+## 4 生信Agent（进阶，待学习）
 
 
  [Science | 生信分析太繁琐？斯坦福造了个全自动AI科研Agent Biomini，不用敲代码直接用](https://www.bilibili.com/video/BV1BYNT6aEVB?spm_id_from=333.1245.0.0)
@@ -51,7 +51,7 @@ https://mp.weixin.qq.com/s/uxO5GBQfmFizNpTlkJ63fA
 
 
 
-## 学习路径
+## 学习路径（。。。不用这么复杂）
 
 - 生物学基础(1-2周)
     - 书籍:《分子生物学精要》📖

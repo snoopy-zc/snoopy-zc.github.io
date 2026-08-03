@@ -273,5 +273,12 @@ $$F(i,j) = \max \begin{cases} F(i-1, j-1) + s(x_i, y_j) \\ F(i-1, j) + d \\ F(i,
 
 
 
+## 参考文献
+
+1. [【视频】生物信息学  2-1序列比对中的基本概念](https://www.bilibili.com/video/BV13t411G7oh/?p=4)
+2. [【视频】生物信息学  2-2 利用动态规划进行全局比对](https://www.bilibili.com/video/BV13t411G7oh/?p=5)
+3. [【视频】生物信息学  2-3 从全局比对到局部比对](https://www.bilibili.com/video/BV13t411G7oh/?p=6)
+4. [【视频】生物信息学  2-4 考虑仿射空位罚分的序列比对，以及如何计算Needleman-Wunsch算法的时间复杂度](https://www.bilibili.com/video/BV13t411G7oh/?p=7)
+
 
 

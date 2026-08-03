@@ -70,3 +70,11 @@ Data Management → Data Computation → Data Mining → Modeling/Simulation
 | Data Mining | Biological discovery |
 | Modeling/Simulation | Predictive models, Systems simulation |
 
+
+## 参考文献
+
+1. [【视频】生物信息学  1-1 什么是生物信息学](https://www.bilibili.com/video/BV13t411G7oh/?p=1)
+2. [【视频】生物信息学  1-2 生物信息学历史](https://www.bilibili.com/video/BV13t411G7oh/?p=2)
+3. [【视频】生物信息学  1-3 中国大陆的生物信息学](https://www.bilibili.com/video/BV13t411G7oh/?p=3)
+
+

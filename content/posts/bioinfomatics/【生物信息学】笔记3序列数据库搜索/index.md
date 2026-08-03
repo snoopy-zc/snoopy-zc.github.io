@@ -279,3 +279,9 @@ $$
 - BLAST使用的是启发式算法，找到的不是最优解
 
 ![Alt text](eg-BLAST-limitation-1.jpg)
+
+
+## 参考文献
+
+1. [【视频】生物信息学  3-1 序列数据库](https://www.bilibili.com/video/BV13t411G7oh/?p=9)
+2. [【视频】生物信息学  3-2 BLAST算法初探](https://www.bilibili.com/video/BV13t411G7oh/?p=10)
