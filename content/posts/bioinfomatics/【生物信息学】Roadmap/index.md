@@ -1,5 +1,5 @@
 ---
-title: 【生物信息学】概述
+title: 【生物信息学】Roadmap
 date: 2026-07-19T00:00:00+08:00
 author: Chen Z
 cover: bioinfomatics.jpeg
@@ -17,13 +17,13 @@ categories:
 ## 1 在线课程
 
 
- ✅ 生物信息学:导论与方法 (https://www.bilibili.com/video/BV13t411G7oh)
+ ✅ 生物信息学:导论与方法 <https://www.bilibili.com/video/BV13t411G7oh>
 
- ✅ 教育部生物科学101计划重点平台：生物信息学 (https://bis.zju.edu.cn/bioinfo101/ppt_resources) <font color="red">（课件可直接下载）</font>
+ ✅ 教育部生物科学101计划重点平台：生物信息学 <https://bis.zju.edu.cn/bioinfo101/ppt_resources> <font color="red">（课件可直接下载）</font>
 
- ✅ 多伦多大学：生物信息学方法 (https://www.bilibili.com/video/BV1uMNE6EEcS)
-- 搬运 https://www.coursera.org/learn/bioinformatics-methods-1
-- 搬运 https://www.coursera.org/learn/bioinformatics-methods-2
+ ✅ 多伦多大学：生物信息学方法 <https://www.bilibili.com/video/BV1uMNE6EEcS>
+- 搬运 <https://www.coursera.org/learn/bioinformatics-methods-1>
+- 搬运 <https://www.coursera.org/learn/bioinformatics-methods-2>
 
 
 ## 2 参考书籍
@@ -40,18 +40,24 @@ categories:
 ## 3 参考博文
 
 《生物信息学》笔记 @想成为大佬的生物狗
-https://mp.weixin.qq.com/s/uxO5GBQfmFizNpTlkJ63fA
+<https://mp.weixin.qq.com/s/uxO5GBQfmFizNpTlkJ63fA>
 
 
 ## 4 生信Agent（进阶，待学习）
 
 
- [Science | 生信分析太繁琐？斯坦福造了个全自动AI科研Agent Biomini，不用敲代码直接用](https://www.bilibili.com/video/BV1BYNT6aEVB?spm_id_from=333.1245.0.0)
+ [Science | 生信分析太繁琐？斯坦福造了个全自动AI科研Agent Biomini，不用敲代码直接用](https://www.bilibili.com/video/BV1BYNT6aEVB)
+
+ [生信分析 | 巧用Agent零代码完成一篇生信分析全套教程](https://www.bilibili.com/video/BV14cK861Eub)
+
+```
+NOTE
+* 不要依赖AI完成你不会的事。
+* 用AI帮助你表达观点，而不是你去表达AI的观点。
+```
 
 
-
-
-## 学习路径（。。。不用这么复杂）
+## 学习路径（临时搬运。。。不用这么复杂）
 
 - 生物学基础(1-2周)
     - 书籍:《分子生物学精要》📖
