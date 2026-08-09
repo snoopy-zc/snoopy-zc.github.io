@@ -48,7 +48,7 @@ categories:
 
  [Science | 生信分析太繁琐？斯坦福造了个全自动AI科研Agent Biomini，不用敲代码直接用](https://www.bilibili.com/video/BV1BYNT6aEVB)
 
- [生信分析 | 巧用Agent零代码完成一篇生信分析全套教程](https://www.bilibili.com/video/BV14cK861Eub)
+ [生信分析 | 巧用Agent零代码完成一篇生信分析全套教程](https://www.bilibili.com/video/BV1XKNR6sEKx)
 
 ```
 NOTE
