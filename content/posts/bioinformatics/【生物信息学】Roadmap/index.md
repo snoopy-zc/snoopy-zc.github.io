@@ -30,7 +30,7 @@ categories:
 
 1. 陈铭《生物信息学》(第4版)科学出版社
 
-2. 赵旻《医学生物信息学数据分析与应用》科学出版社 <font color="red">（推荐）</font>
+2. 赵旻《医学生物信息学数据分析与应用》科学出版社 
 
 2. Selzer, P. M., Marhöfer, R. J. & Koch, O. Applied Bioinformatics. (Springer International Publishing, Cham, 2018). doi:10.1007/978-3-319-68301-0.
 
