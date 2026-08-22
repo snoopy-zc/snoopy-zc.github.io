@@ -1,6 +1,6 @@
 ---
 title: 【生物信息学】Roadmap
-date: 2026-07-19T00:00:00+08:00
+date: 2026-08-22T00:00:00+08:00
 author: snoopy-zc
 cover: bioinfomatics.jpeg
 images:
@@ -11,7 +11,7 @@ categories:
 ---
 
 生物信息学是一个前言交叉领域，发展并应用计算机和计算机技术去研究生物学问题。（本章持续更新...）
- 
+2026-07-19
 
 <!--more-->
 ## 1 在线课程
@@ -21,7 +21,7 @@ categories:
 
  ✅ 教育部生物科学101计划重点平台：生物信息学 <https://bis.zju.edu.cn/bioinfo101/ppt_resources> <font color="red">（课件可直接下载）</font>
 
- ✅ 多伦多大学：生物信息学方法 <https://www.bilibili.com/video/BV1uMNE6EEcS>
+ ✅ 生物信息学方法 <https://www.bilibili.com/video/BV1uMNE6EEcS>
 - 搬运 <https://www.coursera.org/learn/bioinformatics-methods-1>
 - 搬运 <https://www.coursera.org/learn/bioinformatics-methods-2>
 
@@ -37,18 +37,18 @@ categories:
 3. Haubold, B. & Börsch-Haubold, A. Bioinformatics for Evolutionary Biologists: A Problems Approach. (Springer International Publishing, Cham, 2017). doi:10.1007/978-3-319-67395-0.
 
 
-## 3 参考博文
-
-《生物信息学》笔记 @想成为大佬的生物狗
-<https://mp.weixin.qq.com/s/uxO5GBQfmFizNpTlkJ63fA>
+## 3 生信Agent（进阶，待测试）
 
 
-## 4 生信Agent（进阶，待学习）
+ [生物医学 AI Agent 2026：8 个开源工具横向对比](https://claw4science.org/zh/blog/biomedical-ai-agents-2026)
 
+ [视频 | Stanford Agent Biomini](https://www.bilibili.com/video/BV1BYNT6aEVB)
 
- [Science | 生信分析太繁琐？斯坦福造了个全自动AI科研Agent Biomini，不用敲代码直接用](https://www.bilibili.com/video/BV1BYNT6aEVB)
+ [Github | Open Science Desktop](https://github.com/ai4s-research/open-science)
 
- [生信分析 | 巧用Agent零代码完成一篇生信分析全套教程](https://www.bilibili.com/video/BV1XKNR6sEKx)
+ [视频 | 生物分析智能体简介-以bioclaw为例](https://www.bilibili.com/video/BV17GLB6CE59)
+
+ [视频 | 生信分析Agent分析流程](https://www.bilibili.com/video/BV1XKNR6sEKx)
 
 ```
 NOTE
@@ -57,7 +57,7 @@ NOTE
 ```
 
 
-## 学习路径（临时搬运。。。不用这么复杂）
+## 学习路径（临时搬运。。。）
 
 - 生物学基础(1-2周)
     - 书籍:《分子生物学精要》📖
