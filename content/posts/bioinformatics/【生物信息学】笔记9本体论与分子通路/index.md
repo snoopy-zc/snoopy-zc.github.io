@@ -1,7 +1,7 @@
 ---
 title: 【生物信息学】笔记9本体论与分子通路
 date: 2026-08-10T00:00:00+08:00
-author: Chen Z
+author: snoopy-zc
 cover: cover.jpg
 images:
 - cover.jpg

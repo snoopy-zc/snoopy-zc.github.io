@@ -1,7 +1,7 @@
 ---
 title: 【生物信息学】笔记10生物信息资源
 date: 2026-08-15T00:00:00+08:00
-author: Chen Z
+author: snoopy-zc
 cover: cover.jpg
 images:
 - cover.jpg

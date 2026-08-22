@@ -1,7 +1,7 @@
 ---
 title: 【生物信息学】笔记11新基因鉴定及演化分析
 date: 2026-08-16T00:00:00+08:00
-author: Chen Z
+author: snoopy-zc
 cover: cover.jpg
 images:
 - cover.jpg

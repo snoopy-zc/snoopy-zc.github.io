@@ -1,7 +1,7 @@
 ---
 title: 【生物信息学】笔记12结合干湿实验研究演化问题
 date: 2026-08-16T00:08:00+08:00
-author: Chen Z
+author: snoopy-zc
 cover: cover.jpg
 images:
 - cover.jpg

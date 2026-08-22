@@ -1,7 +1,7 @@
 ---
 title: 【生物信息学】笔记6遗传变异的表型影响
 date: 2026-08-01T00:00:00+08:00
-author: Chen Z
+author: snoopy-zc
 cover: cover.jpg
 images:
 - cover.jpg

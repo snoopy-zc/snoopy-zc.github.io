@@ -1,7 +1,7 @@
 ---
 title: 【生物信息学】笔记8利用深度测序技术研究转录组
 date: 2026-08-04T00:00:00+08:00
-author: Chen Z
+author: snoopy-zc
 cover: cover.jpg
 images:
 - cover.jpg

@@ -1,7 +1,7 @@
 ---
 title: 【生物信息学】笔记2序列比对
 date: 2026-07-21T00:00:00+08:00
-author: Chen Z
+author: snoopy-zc
 cover: eg2.jpg
 images:
 - cover.jpg

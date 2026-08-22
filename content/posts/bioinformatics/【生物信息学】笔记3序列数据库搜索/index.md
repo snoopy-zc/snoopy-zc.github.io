@@ -1,7 +1,7 @@
 ---
 title: 【生物信息学】笔记3序列数据库搜索
 date: 2026-07-22T00:00:00+08:00
-author: Chen Z
+author: snoopy-zc
 cover: cover.jpg
 images:
 - cover.jpg

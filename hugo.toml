@@ -1,7 +1,7 @@
 baseURL = "https://snoopy-zc.github.io"
 defaultContentLanguage = "zh"
 locale = "zh-Hans"
-title = "Chen Z's Blog"
+title = "snoopy-zc's Blog"
 theme = "dream"
 
 enableGitInfo = true
@@ -46,10 +46,10 @@ darkTheme = "forest"
 
 images = ["img/global-background.jpg"]
 
-author = "Chen Z"
-description = "The life record of Chen Z is presented here."
+author = "snoopy-zc"
+description = "The life record of snoopy-zc is presented here."
 avatar = "img/personal/avatar.jpg"
-headerTitle = "Chen Z's Blog"
+headerTitle = "snoopy-zc's Blog"
 motto = "弦歌不辍。"
 
 # footerBottomText = ""
@@ -102,7 +102,7 @@ reorderShares = [""]
 
 [params.navItems]
 github = { href = "https://github.com/snoopy-zc", target = "_blank", icon = "logo-github", title = "GitHub" }
-products = { href = "https://snoopy-zc.github.io", target = "_blank", icon = "planet", title = "Chen Z's Blog" }
+products = { href = "https://snoopy-zc.github.io", target = "_blank", icon = "planet", title = "snoopy-zc's Blog" }
 
 [params.advanced]
 customCSS = ["css/custom.css"]
