@@ -1,5 +1,5 @@
 ---
-title: 【生信Agent】工作台搭建
+title: 【生信Agent】平台测试
 date: 2026-08-22T00:08:00+08:00
 author: snoopy-zc
 cover: cover.jpg
@@ -12,7 +12,7 @@ categories:
 ---
 
 
-主要收集生物信息学相关的Agent平台工具，尝试搭建运行环境...
+主要记录一些Agent平台搭建测试...
 
 <!--more-->
 
@@ -27,17 +27,20 @@ categories:
 | BioMedAgent | 57    | MIT        | paper 锚定、同行评议 | 独立作者               |
 | Darwin      | 1     | MIT        | 系统综述 + 临床证据   | yejunbin           |
 
-
-## Stanford Biomini
-
-
-
----
-## BioClaw
-
-
 ---
 ## Open Science Desktop
+
+构建组合：Open Science Desktop(web版) + deepseek V4 flash + BioClaw Skills
+
+优点：
+- 跨平台（windows, macOS, Linux）
+- 能够部署web版本
+
+缺点：
+- web版本页面无法创建项目，也无法上传文件，使用不方便，只适合本地使用
+- 自带的技能组ai4s-research/ai4s-skills只能用于写报告，功能性不足
+- 安装新kills之后需要重启整个平台服务
+- pdf预览只支持桌面版
 
 
 
