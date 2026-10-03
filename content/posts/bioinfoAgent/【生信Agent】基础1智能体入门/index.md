@@ -1,5 +1,5 @@
 ---
-title: 【生信Agent】智能体入门
+title: 【生信Agent】基础1智能体入门
 date: 2026-08-30T00:08:00+08:00
 author: snoopy-zc
 cover: cover.jpg
