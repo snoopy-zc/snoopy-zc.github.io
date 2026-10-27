@@ -123,6 +123,14 @@ Agent自动进行差异分析、富集分析、GSEA...
 ```
 
 
+## 4 All-in-one
+
+将打包的文档（以上所有提示词和操作过程）放在操作路径下，输入以下提示词
+
+```
+按照BULK_RNA_SEQ_ANALYSIS_SOP.md分析【GSEXXX】数据集
+```
+
 
 
 
